@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_report"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="5dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgPlaylistItemBg"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="0dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/freelance" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_read_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:showDividers="beginning|middle">
+
+
+                        <TextView
+                            android:id="@+id/closingdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:paddingLeft="24px"
+                            android:paddingRight="24px"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/proximaregular"
+                            android:text="@string/about"
+                            android:textColor="@android:color/black"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="8dp"
+                                android:layout_marginStart="5dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/viewll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="18px"
+                                    android:background="@drawable/rounded"
+                                    android:fontFamily="@font/prximabold"
+                                    android:paddingLeft="20px"
+                                    android:paddingRight="20px"
+
+                                    android:text=" View All Jobs"
+                                    android:drawableRight="@drawable/ic_right"
+
+                                    android:textColor="@color/text" />
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:visibility="gone"
+                                    android:paddingRight="20px"
+                                    android:paddingLeft="20px"
+                                    android:textColor="#fff"
+                                    android:layout_marginEnd="18px"
+                                    android:fontFamily="@font/prximabold"
+                                    android:background="@drawable/rounded"
+                                    android:text=" Saved Jobs"
+                                    android:drawableLeft="@drawable/ic_save"
+                                    android:id="@+id/saved" />
+
+
+
+
+
+                            </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:paddingLeft="32px"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Recent Jobs"
+
+            android:fontFamily="@font/google_sans_bold"
+            />
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                ads:adSize="BANNER"
+
+                ads:adUnitId="ca-app-pub-3051706372675096/8735032651"></com.google.android.gms.ads.AdView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/latestjobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

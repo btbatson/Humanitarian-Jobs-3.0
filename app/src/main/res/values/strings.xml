@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Humanitarian Jobs</string>
+    <string name="title">Title</string>
+    <string name="the_body_of_info_goes_here">The body of info goes here</string>
+    <string name="report_from">Location</string>
+    <string name="source">Country</string>
+    <string name="date">Closing Date </string>
+    <string name="todo">TODO</string>
+    <string name="font_bold">fonts/bold.ttf</string>
+    <string name="font_medium">fonts/CeraPro-Medium.otf</string>
+    <string name="font_regular">fonts/Regular.ttf</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="rate_app_title">Rate App</string>
+    <string name="rate_app_message">If you are enjoying our app, please take a moment to rate it on PlayStore. Thanks for your support!</string>
+    <string name="rate_btn_pos">Rate Now</string>
+    <string name="rate_btn_neg">Remind me later</string>
+    <string name="rate_btn_nut">No, Thanks</string>
+
+<string name="lbl_forgot_password">Forgot password?</string>
+        <string name="title_home">Home</string>
+        <string name="title_dashboard">Logout</string>
+        <string name="title_notifications">Profile</string>
+    <string name="about">
+    Humanitarians Jobs is a valuable resource for job listings, helping humanitarians organizations to disseminate career and training opportunities to global audience.
+</string>
+    <string name="aboutus">
+    This is a mobile application powered by ReliefWeb  Jobs API which makes it easy for humanitarians to find latest jobs across all organizations around the world.
+</string>
+</resources>
